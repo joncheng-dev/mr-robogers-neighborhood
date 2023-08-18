@@ -57,8 +57,6 @@ function beepBoop(enteredNumber) {
   }
 }
 
-beepBoop(24);
-
 // User Interface Logic
 window.addEventListener("load", formLoader);
 
@@ -71,4 +69,17 @@ function formSubmissionHandler(event) {
   event.preventDefault();
 
   const userEnteredNumber = document.getElementById("userInput").value;
+
+  const userResults = beepBoop(userEnteredNumber);
+  const pElement = document.getElementById("results-display");
+  const ulElement = document.createElement("ul");
+  pElement.append(ulElement);
+
+  userResults.forEach(function (item) {
+    const liElement = document.createElement("li");
+    liElement.append(item);
+    ulElement.append(liElement);
+  });
+
+  document.getElementById("results-div").removeAttribute("class", "hidden");
 }
