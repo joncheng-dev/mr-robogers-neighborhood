@@ -12,4 +12,8 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 Test: "It should receive user input, and return null if input is a negative number."
 Code: beepBoop(-5);
 Expected Output: null
+
+Test: "It should receive user input, and return NaN if input contains alpha characters."
+Code: beepBoop("5a1");
+Expected Output: NaN
 ```
