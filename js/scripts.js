@@ -58,8 +58,6 @@ function beepBoop(enteredNumber) {
 }
 
 // User Interface Logic
-window.addEventListener("load", formLoader);
-
 function formLoader() {
   let userForm = document.querySelector("form");
   userForm.addEventListener("submit", formSubmissionHandler);
@@ -72,14 +70,25 @@ function formSubmissionHandler(event) {
 
   const userResults = beepBoop(userEnteredNumber);
   const pElement = document.getElementById("results-display");
-  const ulElement = document.createElement("ul");
-  pElement.append(ulElement);
 
-  userResults.forEach(function (item) {
-    const liElement = document.createElement("li");
-    liElement.append(item);
-    ulElement.append(liElement);
-  });
+  if (userResults === null) {
+    // message to user about entering a positive integer
+    let errorMessage = "Please enter a positive integer";
+    pElement.append(errorMessage);
+  } else {
+    const ulElement = document.createElement("ul");
+    pElement.append(ulElement);
 
-  document.getElementById("results-div").removeAttribute("class", "hidden");
+    userResults.forEach(function (item) {
+      const liElement = document.createElement("li");
+      liElement.append(item);
+      ulElement.append(liElement);
+    });
+  }
+
+  document.getElementById("results-div").removeAttribute("class");
+
+  document.getElementById("user-form").reset();
 }
+
+window.addEventListener("load", formLoader);
