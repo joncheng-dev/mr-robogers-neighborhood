@@ -29,14 +29,16 @@ function beepBoop(enteredNumber) {
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
       if (element > 9) {
         const splitElement = parseInt(element.toString().split(""));
+        let replacedNumber;
         for (let i = 0; i < splitElement.length; i++) {
           if (splitElement[i] === 3) {
-            return "Won't you be my neighbor?";
+            replacedNumber = "Won't you be my neighbor?";
           } else if (splitElement[i] === 2) {
-            return "Boop!";
+            replacedNumber = "Boop!";
           } else if (splitElement[i] === 1) {
-            return "Beep!";
+            replacedNumber = "Beep!";
           }
+          return replacedNumber;
         }
       } else {
         if (element === 3) {
