@@ -1,4 +1,27 @@
-Tests:
+# _Mr. Roboger's Neighborhood_
+
+#### By _**Jonathan Cheng**_
+
+#### _A website app utilizing a form to collect user input, JavaScript employing logic branching, arrays, and loops to display the results._
+
+## Technologies Used
+
+- _HTML_
+- _CSS_
+- _JavaScript_
+- _Web APIs_
+
+## Description
+
+_This is my independent project for Week 3 of Epicodus, demonstrating my abilities in the basics of JavaScript -- specifically the concepts of arrays and looping. It uses basic HTML and CSS for the website appearance, and JavaScript for the 'magic'. Also being practiced is Test Driven Development. You'll see the tests used for the business logic below._
+
+## Setup/Installation Requirements
+
+- _Clone this repository from GitHub: https://github.com/joncheng-dev/mr-robogers-neighborhood.git_
+- _Navigate to the project's root directory._
+- _Open index.html in your browser._
+
+## Tests:
 
 ```
 Describe: beepBoop()
@@ -43,3 +66,31 @@ Test #8b: "It should follow above said rules for number replacement, but also ap
 Code: beepBoop(24);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Boop!"]
 ```
+
+## Known Bugs
+
+- _Currently viewing is ideal only for full-sized screens - not optimized for mobile._
+
+## License
+
+_MIT License_
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright (c) _2023_ _Jonathan Cheng_
