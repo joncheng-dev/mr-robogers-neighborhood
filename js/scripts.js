@@ -21,16 +21,33 @@ function beepBoop(enteredNumber) {
     }
     console.log(saveNumbersUpToEnteredNumber);
     // Maps through whole array. Saves elements into new array.
-    // If element is '1', then pushes "Beep" instead.
+    // If element is '1', then pushes "Beep!" instead.
+    // If element is '2', then pushes "Boop!" instead.
+    // If element is '3', then pushes "Won't you be my neighbor?" instead.
+    // What happens if element is >9?
+    // Apply rules to check individual digits.
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
-      if (element === 3) {
-        return "Won't you be my neighbor?";
-      } else if (element === 2) {
-        return "Boop!";
-      } else if (element === 1) {
-        return "Beep!";
+      if (element > 9) {
+        const splitElement = parseInt(element.toString().split(""));
+        for (let i = 0; i < splitElement.length; i++) {
+          if (splitElement[i] === 3) {
+            return "Won't you be my neighbor?";
+          } else if (splitElement[i] === 2) {
+            return "Boop!";
+          } else if (splitElement[i] === 1) {
+            return "Beep!";
+          }
+        }
       } else {
-        return element;
+        if (element === 3) {
+          return "Won't you be my neighbor?";
+        } else if (element === 2) {
+          return "Boop!";
+        } else if (element === 1) {
+          return "Beep!";
+        } else {
+          return element;
+        }
       }
     });
     console.log(substitutedResult);
