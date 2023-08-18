@@ -38,4 +38,8 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 Test #8: "It should follow above said rules for number replacement, but also apply the rules to a 2 digit number: 12"
 Code: beepBoop(12);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!"]
+
+Test #8b: "It should follow above said rules for number replacement, but also apply the rules to a 2 digit number: 24"
+Code: beepBoop(24);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?", "Boop!"]
 ```
