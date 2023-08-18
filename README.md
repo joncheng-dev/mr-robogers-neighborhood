@@ -24,4 +24,8 @@ Expected Output: [0, "Beep!"]
 Test: "It should replace numbers that contain a '2' with "Boop!""
 Code: beepBoop(2);
 Expected Output: [0, "Beep!", "Boop!"]
+
+Test: "It should replace numbers that contain a '3' with "Won't you be my neighbor?""
+Code: beepBoop(3);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?"]
 ```
