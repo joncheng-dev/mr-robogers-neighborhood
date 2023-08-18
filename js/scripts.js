@@ -28,14 +28,14 @@ function beepBoop(enteredNumber) {
     // Apply rules to check individual digits.
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
       if (element > 9) {
-        const splitElement = parseInt(element.toString().split(""));
+        const splitElement = element.toString().split("");
         let replacedNumber;
         for (let i = 0; i < splitElement.length; i++) {
-          if (splitElement[i] === 3) {
+          if (splitElement[i] === 3 || splitElement[i] === "3") {
             replacedNumber = "Won't you be my neighbor?";
-          } else if (splitElement[i] === 2) {
+          } else if (splitElement[i] === 2 || splitElement[i] === "2") {
             replacedNumber = "Boop!";
-          } else if (splitElement[i] === 1) {
+          } else if (splitElement[i] === 1 || splitElement[i] === "1") {
             replacedNumber = "Beep!";
           }
           return replacedNumber;
@@ -56,4 +56,4 @@ function beepBoop(enteredNumber) {
   }
 }
 
-// User Interface Logic
+beepBoop(10);
