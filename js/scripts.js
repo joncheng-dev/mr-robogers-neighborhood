@@ -70,6 +70,8 @@ function formSubmissionHandler(event) {
 
   const userResults = beepBoop(userEnteredNumber);
   const pElement = document.getElementById("results-display");
+  // Removes all ul and li elements if remaining from prior submission.
+  pElement.innerHTML = "";
 
   if (userResults === null) {
     // message to user about entering a positive integer
@@ -87,7 +89,7 @@ function formSubmissionHandler(event) {
   }
 
   document.getElementById("results-div").removeAttribute("class");
-
+  // Resets form.
   document.getElementById("user-form").reset();
 }
 
