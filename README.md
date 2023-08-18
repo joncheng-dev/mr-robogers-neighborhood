@@ -16,4 +16,8 @@ Expected Output: null
 Test: "It should receive user input, and return NaN if input contains alpha characters."
 Code: beepBoop("5a1");
 Expected Output: NaN
+
+Test: "It should replace numbers that contain a '1' with "Beep""
+Code: beepBoop(1);
+Expected Output: [0, "Beep"]
 ```
