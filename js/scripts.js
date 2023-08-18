@@ -9,6 +9,7 @@ function numberRegex(userInput) {
 // Business Logic
 function decideDigitReplacement(anyInteger) {
   const integerToDigits = anyInteger.toString().split("");
+  // replacedNumber keeps track of hierarchy for of substitutions.
   let replacedNumber = -1;
   for (let i = 0; i < integerToDigits.length; i++) {
     if (integerToDigits[i] === "3") {
@@ -37,13 +38,13 @@ function decideDigitReplacement(anyInteger) {
 }
 
 function beepBoop(enteredNumber) {
-  const saveNumbersUpToEnteredNumber = [];
   // Conditional statements to check if enteredNumber is a valid number
   if (enteredNumber < 0) {
     return null;
   } else if (!numberRegex(enteredNumber)) {
     return NaN;
   } else {
+    const saveNumbersUpToEnteredNumber = [];
     // Counts up from 0, pushing each number into an array
     for (let i = 0; i <= enteredNumber; i++) {
       saveNumbersUpToEnteredNumber.push(i);
@@ -52,8 +53,22 @@ function beepBoop(enteredNumber) {
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
       return decideDigitReplacement(element);
     });
-    console.log(substitutedResult);
+    return substitutedResult;
   }
 }
 
 beepBoop(24);
+
+// User Interface Logic
+window.addEventListener("load", formLoader);
+
+function formLoader() {
+  let userForm = document.querySelector("form");
+  userForm.addEventListener("submit", formSubmissionHandler);
+}
+
+function formSubmissionHandler(event) {
+  event.preventDefault();
+
+  const userEnteredNumber = document.getElementById("userInput").value;
+}
