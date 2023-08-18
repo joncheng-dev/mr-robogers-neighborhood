@@ -23,7 +23,9 @@ function beepBoop(enteredNumber) {
     // Maps through whole array. Saves elements into new array.
     // If element is '1', then pushes "Beep" instead.
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
-      if (element === 1) {
+      if (element === 2) {
+        return "Boop!";
+      } else if (element === 1) {
         return "Beep!";
       } else {
         return element;
