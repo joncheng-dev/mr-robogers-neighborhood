@@ -29,17 +29,31 @@ function beepBoop(enteredNumber) {
     const substitutedResult = saveNumbersUpToEnteredNumber.map(function (element) {
       if (element > 9) {
         const splitElement = element.toString().split("");
-        let replacedNumber;
+        let replacedNumber = 0;
         for (let i = 0; i < splitElement.length; i++) {
           if (splitElement[i] === "3") {
-            replacedNumber = "Won't you be my neighbor?";
+            if (replacedNumber < 3) {
+              replacedNumber = 3;
+            }
           } else if (splitElement[i] === "2") {
-            replacedNumber = "Boop!";
+            if (replacedNumber < 2) {
+              replacedNumber = 2;
+            }
           } else if (splitElement[i] === "1") {
-            replacedNumber = "Beep!";
+            if (replacedNumber === 0) {
+              replacedNumber = 1;
+            }
           }
         }
-        return replacedNumber;
+        if (replacedNumber === 3) {
+          return "Won't you be my neighbor?";
+        } else if (replacedNumber === 2) {
+          return "Boop!";
+        } else if (replacedNumber === 1) {
+          return "Beep!";
+        } else {
+          return splitElement.join("");
+        }
       } else {
         if (element === 3) {
           return "Won't you be my neighbor?";
@@ -56,4 +70,4 @@ function beepBoop(enteredNumber) {
   }
 }
 
-beepBoop(12);
+beepBoop(24);
