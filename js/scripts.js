@@ -88,7 +88,7 @@ function formSubmissionHandler(event) {
     });
   }
 
-  document.getElementById("results-div").removeAttribute("class");
+  document.getElementById("results-div").removeAttribute("hidden");
   // Resets form.
   document.getElementById("user-form").reset();
 }

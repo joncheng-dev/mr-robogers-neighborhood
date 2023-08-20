@@ -8,12 +8,13 @@
 
 - _HTML_
 - _CSS_
+- _Bootstrap_
 - _JavaScript_
 - _Web APIs_
 
 ## Description
 
-_This is my independent project for Week 3 of Epicodus, demonstrating my abilities in the basics of JavaScript -- specifically the concepts of arrays and looping. It uses basic HTML and CSS for the website appearance, and JavaScript for the 'magic'. Also being practiced is Test Driven Development. You'll see the tests used for the business logic below._
+_This is my independent project for Week 3 of Epicodus, demonstrating my abilities in the basics of JavaScript -- specifically the concepts of arrays and looping. It uses basic HTML, CSS, and Bootstrap for the website appearance, and JavaScript for the 'magic'. Also being practiced is Test Driven Development. You'll see the tests used for the business logic below._
 
 ## Setup/Installation Requirements
 

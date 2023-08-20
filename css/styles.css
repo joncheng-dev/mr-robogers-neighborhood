@@ -5,3 +5,29 @@ body {
 .hidden {
   display: none;
 }
+
+.column {
+  float: left;
+  width: 44%;
+  padding: 2%;
+  margin: 2%;
+  border: 1px black dotted;
+}
+
+.row {
+  float: left;
+  width: 94%;
+  padding: 2%;
+  margin: 2% 1%;
+  border: 1px black dotted;
+}
+
+#robot-image {
+  width: 100%;
+  height: auto;
+}
+
+/* #results-div {
+  width: 100%;
+  height: auto;
+} */
