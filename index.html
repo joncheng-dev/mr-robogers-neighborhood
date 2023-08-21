@@ -14,23 +14,27 @@
     <title>Mr Robogers Neighborhood</title>
   </head>
   <body>
-    <h1>Mr Robogers Neighborhood</h1>
-    <h3>Please enter a positive integer.</h3>
-    <div class="column">
-      <div id="image-div">
-        <img src="img/robot-image.png" alt="an image of a robot" id="robot-image"></a>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Mr Robogers Neighborhood</h1>
+        <h5>Please enter a positive integer.</h5>
       </div>
-      <div id="results-div" class="row" class="hidden">
-        <h3>Results:</h3>
-        <p id="results-display"></p>
+      <div class="column">
+        <div id="image-div">
+          <img src="img/robot-image.png" alt="an image of a robot" id="robot-image"></a>
+        </div>
       </div>
-    </div>
-    <div class="column">
-      <form id="user-form">
-        <label for="userInput">Integer: </label>
-        <input id="userInput" type="number" name="userInput" />
-        <button type="submit">Submit</button>
-      </form>
+      <div class="column">
+        <form id="user-form">
+          <label for="userInput">Enter a positive integer and click submit to see your results! </label>
+          <input id="userInput" type="number" name="userInput" />
+          <button type="submit">Submit</button>
+        </form>
+        <div id="results-div" class="row" class="hidden">
+          <h4>Your Results:</h4>
+          <p id="results-display"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

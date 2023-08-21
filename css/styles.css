@@ -1,5 +1,6 @@
 body {
   background-color: lightblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hidden {
@@ -17,8 +18,7 @@ body {
 .row {
   float: left;
   width: 94%;
-  padding: 2%;
-  margin: 2% 1%;
+  margin: 3% 0%;
   border: 1px black dotted;
 }
 
@@ -26,8 +26,3 @@ body {
   width: 100%;
   height: auto;
 }
-
-/* #results-div {
-  width: 100%;
-  height: auto;
-} */
