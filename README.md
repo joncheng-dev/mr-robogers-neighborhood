@@ -70,7 +70,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 
 ## Known Bugs
 
-- _Currently viewing is ideal only for full-sized screens - not optimized for mobile._
+- _Currently viewing is not optimized for mobile._
 
 ## License
 
