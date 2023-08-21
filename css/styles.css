@@ -12,14 +12,12 @@ body {
   width: 44%;
   padding: 2%;
   margin: 2%;
-  border: 1px black dotted;
 }
 
 .row {
   float: left;
   width: 94%;
   margin: 3% 0%;
-  border: 1px black dotted;
 }
 
 #robot-image {
